@@ -1,0 +1,657 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #050027;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.box {
+    padding: 2% 10%;
+}
+
+#home{
+    background-image: url(/portfolio/pngandpic/—Pngtree—digital\ information\ technology\ binary\ world_1262482.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #ffffff;
+    background-color: #050027 ;
+    box-shadow: 5px 5px 10px 5px;
+    position: fixed;
+    width: 80vw;
+    height: 10vh;
+    z-index: 5;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a:hover{
+    color: yellow;
+}
+nav ul li a:active{
+    color: red;
+}
+
+
+img {
+    width: 300px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.left {
+    padding-top: 30%;
+    font-size: 1.25rem;
+    align-self: center;
+}
+
+.left h1{
+    line-height: 1.5cm;
+}
+
+.header-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#mypic{
+    position: relative;
+    top: 120px;
+    width: 30vw;
+    border-radius: 50%;
+    box-shadow: -1px -1px 100px gold;
+    border: none;
+}
+
+.cv {
+    display: inline-block;
+    appearance: button;
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+    padding: 16px 0px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    top: 1cm;
+    background-color: rgb(45, 7, 255);
+    box-shadow: rgb(47, 10, 140) 20px 20px 60px, rgb(31, 38, 52) -20px -20px 60px;
+    /* transition: all 0s ease-in-out infinite !important;  */
+    animation: aniket 1.5s infinite;
+}
+
+@keyframes aniket {
+    from{
+        width: 250px;
+    }
+    to {
+        width: 325px;
+    }
+}
+
+.cv:hover {
+    background-color: red;
+}
+
+/* ------------------about-------------------- */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-column1 {
+    flex-basis: 35%;
+}
+
+.about-column2 {
+    margin-top: 15px;
+    flex-basis: 60%;
+}
+
+#pic2 {
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: -1px -1px 100px blue;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 20px;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 550;
+    color: white;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+.tab-contains ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 0.90rem;
+}
+
+.tab-contains ul li span {
+    color: rgb(66, 98, 241);
+    font-size: 0.90rem;
+}
+
+.tab-contains {
+    display: none;
+}
+
+.tab-contains.active-tab {
+    display: block;
+}
+
+#title{
+    margin: 1.5%;
+    font-size: 0.8rem;
+}
+
+/* -----------------skills------------- */
+#skills{
+    background-image: url(/portfolio/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg);
+    background-size: cover;
+}
+
+.boder{
+    margin-top: 150px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow:-1px -1px 100px blue ;
+}
+
+#skills h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.skills-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1% 6%;
+}
+
+.skills-box p{
+    font-weight: 600;
+    color: white;
+}
+
+.skills-box{
+    width: 12vw;
+    height: 20vh;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow:-1px -1px 100px blue ;
+    margin: 20px 2% ;
+}
+
+.cpluse{
+    background-image: url(/portfolio/pngandpic/icons8-c++-480.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.c{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(/portfolio/pngandpic/icons8-c-programming-480.png);
+    background-size: cover;
+
+}
+
+.java{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(/portfolio/pngandpic/icons8-java-480.png);
+    background-size: cover;
+}
+
+.sql{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(/portfolio/pngandpic/pngwing.com.png);
+    background-size: cover;
+}
+
+.html{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(/portfolio/pngandpic/icons8-html-480.png);
+    background-size: cover;
+}
+
+.css{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(/portfolio/pngandpic/icons8-css-480.png);
+    background-size: cover;
+}
+
+.js{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(/portfolio/pngandpic/icons8-js-480.png);
+    background-size: cover;
+}
+
+.oops{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(/portfolio/pngandpic/download.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:1000px){
+    #skills{
+        background-image: url(/portfolio/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg) ;
+        background-size: cover ;
+        background-position: center;
+    }
+    
+}
+@media (min-width:1001px) and (max-width:1500px){
+    #skills{
+        background-image: url(/portfolio/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+}
+
+/* -----------------Projects ------------- */
+
+#project{
+    background-image: url(/portfolio/pngandpic/jj-ying-7JX0-bfiuxQ-unsplash.jpg);
+    background-size: cover;
+}
+
+#project h1{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.project-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+.project-box{
+    width: 390px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: -1px -1px 50px blue;
+    margin: 10px 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(46, 0, 172, 0.834), red);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 1900;
+    margin-bottom: 10px;
+}
+
+.layer a{
+    margin-top: 15px;
+    color: red;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 50px;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.project-box:hover .layer{
+    height: 100%;
+}
+
+.portfolio{
+    width: 375px;
+    height: 190px;
+    border-radius: 10px;
+    background-image: url(/portfolio/pngandpic/Portfolio.jpg);
+    background-size: cover;
+}
+
+.calculator{
+    width: 375px;
+    height: 190px;
+    border-radius: 10px;
+    background-image: url(/portfolio/pngandpic/calculator.jpg);
+    background-size: cover;
+}
+
+.gussthenumber{
+    width: 375px;
+    height: 190px;
+    border-radius: 10px;
+    background-image: url(/portfolio/pngandpic/Gussthenumber.jpg);
+    background-size: cover;
+}
+
+.paymentform{
+    width: 375px;
+    height: 190px;
+    border-radius: 10px;
+    background-image: url(/portfolio/pngandpic/paymentform.jpg);
+    background-size: cover;
+}
+
+.todolist{
+    width: 375px;
+    height: 190px;
+    border-radius: 10px;
+    background-image: url(/portfolio/pngandpic/todolist.jpg);
+    background-size: cover;
+}
+
+@media(max-width:1000px){
+    #project{
+        height: 200vh;
+    }
+    
+}
+@media (min-width:1001px) and (max-width:1500px){
+    #project{
+        height: 140vh;
+    }
+    
+}
+
+/* -----------------contact ------------- */
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p a{
+    color: white;
+}
+
+.contact-left p i{
+    color: blue;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icon{
+    margin-top: 40px;
+}
+
+.social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: blue;
+    display: inline-block;
+    transition: transform 0.5s;
+    box-shadow: rgb(47, 10, 140) 20px 20px 60px, rgb(31, 38, 52) -20px -20px 60px;
+}
+
+.social-icon a:hover{
+    color: yellow;
+    transform: translateY(-5px);
+}
+.social-icon a:active{
+    color: red;
+}
+
+.btn{
+    display: inline-block;
+    padding-left: 55px;
+    margin-left: 11px;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(45, 7, 255);
+    box-shadow: rgb(47, 10, 140) 20px 20px 60px, rgb(31, 38, 52) -20px -20px 60px;
+    color: white;
+}
+
+.btn:hover{
+    background-color: red;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 2px solid red;
+    outline: none;
+    background: transparent;
+    padding: 15px;
+    margin: 15px;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.red{
+    color: blue;
+}
+
+.copyright p{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.copyright hr{
+    color: red;
+    background-color: red;
+}
+
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .headertext{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    #mypic{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 125px;
+        top: 425px;
+        width: 275px;
+    }
+    .headertext h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: rgb(122, 88, 246);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .navbar{
+        height: 7%;
+    }
+    .subtitle{
+        font-size: 1.5rem;
+    }
+    #pic2{
+        position: relative;
+        left: 25%;
+        top: 50px;
+        width: 200px;
+        height: 260px;
+    }
+    .about-column1, .about-column2{
+        flex-basis: 100%;
+    }
+    .about-column1{
+        margin-bottom: 30px;
+    }
+    .about-column2{
+        font-size: 2px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .services-list div h2{
+        font-size: 30px;
+    }
+    .services-list div p{
+        font-size: 14px;
+    }
+    .contact-left, .contact-right{
+        flex-basis:50%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
