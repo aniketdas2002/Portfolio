@@ -27,7 +27,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-betweeen;
+    justify-content: space-between;
     flex-wrap: wrap;
     color: #ffffff;
     background-color: #050027 ;
