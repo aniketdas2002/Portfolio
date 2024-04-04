@@ -20,7 +20,7 @@ body {
 }
 
 #home{
-    background-image: url(/portfolio/pngandpic/—Pngtree—digital\ information\ technology\ binary\ world_1262482.jpg);
+    background-image: url(/pngandpic/—Pngtree—digital\ information\ technology\ binary\ world_1262482.jpg);
     background-size: cover;
 }
 
@@ -206,7 +206,7 @@ nav ul li a {
 
 /* -----------------skills------------- */
 #skills{
-    background-image: url(/portfolio/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg);
+    background-image: url(/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg);
     background-size: cover;
 }
 
@@ -250,7 +250,7 @@ nav ul li a {
 }
 
 .cpluse{
-    background-image: url(/portfolio/pngandpic/icons8-c++-480.png);
+    background-image: url(/pngandpic/icons8-c++-480.png);
     background-size: cover;
     width: 50px;
     height: 50px;
@@ -261,7 +261,7 @@ nav ul li a {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    background-image: url(/portfolio/pngandpic/icons8-c-programming-480.png);
+    background-image: url(/pngandpic/icons8-c-programming-480.png);
     background-size: cover;
 
 }
@@ -270,7 +270,7 @@ nav ul li a {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    background-image: url(/portfolio/pngandpic/icons8-java-480.png);
+    background-image: url(/pngandpic/icons8-java-480.png);
     background-size: cover;
 }
 
@@ -278,7 +278,7 @@ nav ul li a {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    background-image: url(/portfolio/pngandpic/pngwing.com.png);
+    background-image: url(/pngandpic/pngwing.com.png);
     background-size: cover;
 }
 
@@ -286,7 +286,7 @@ nav ul li a {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    background-image: url(/portfolio/pngandpic/icons8-html-480.png);
+    background-image: url(/pngandpic/icons8-html-480.png);
     background-size: cover;
 }
 
@@ -294,7 +294,7 @@ nav ul li a {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    background-image: url(/portfolio/pngandpic/icons8-css-480.png);
+    background-image: url(/pngandpic/icons8-css-480.png);
     background-size: cover;
 }
 
@@ -302,7 +302,7 @@ nav ul li a {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    background-image: url(/portfolio/pngandpic/icons8-js-480.png);
+    background-image: url(/pngandpic/icons8-js-480.png);
     background-size: cover;
 }
 
@@ -310,7 +310,7 @@ nav ul li a {
     width: 50px;
     height: 50px;
     border-radius: 10px;
-    background-image: url(/portfolio/pngandpic/download.png);
+    background-image: url(/pngandpic/download.png);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -318,7 +318,7 @@ nav ul li a {
 
 @media(max-width:1000px){
     #skills{
-        background-image: url(/portfolio/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg) ;
+        background-image: url(/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg) ;
         background-size: cover ;
         background-position: center;
     }
@@ -326,7 +326,7 @@ nav ul li a {
 }
 @media (min-width:1001px) and (max-width:1500px){
     #skills{
-        background-image: url(/portfolio/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg);
+        background-image: url(/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -336,7 +336,7 @@ nav ul li a {
 /* -----------------Projects ------------- */
 
 #project{
-    background-image: url(/portfolio/pngandpic/jj-ying-7JX0-bfiuxQ-unsplash.jpg);
+    background-image: url(/pngandpic/jj-ying-7JX0-bfiuxQ-unsplash.jpg);
     background-size: cover;
 }
 
@@ -416,7 +416,7 @@ nav ul li a {
     width: 375px;
     height: 190px;
     border-radius: 10px;
-    background-image: url(/portfolio/pngandpic/Portfolio.jpg);
+    background-image: url(/pngandpic/Portfolio.jpg);
     background-size: cover;
 }
 
@@ -424,7 +424,7 @@ nav ul li a {
     width: 375px;
     height: 190px;
     border-radius: 10px;
-    background-image: url(/portfolio/pngandpic/calculator.jpg);
+    background-image: url(/pngandpic/calculator.jpg);
     background-size: cover;
 }
 
@@ -432,7 +432,7 @@ nav ul li a {
     width: 375px;
     height: 190px;
     border-radius: 10px;
-    background-image: url(/portfolio/pngandpic/Gussthenumber.jpg);
+    background-image: url(/pngandpic/Gussthenumber.jpg);
     background-size: cover;
 }
 
@@ -440,7 +440,7 @@ nav ul li a {
     width: 375px;
     height: 190px;
     border-radius: 10px;
-    background-image: url(/portfolio/pngandpic/paymentform.jpg);
+    background-image: url(/pngandpic/paymentform.jpg);
     background-size: cover;
 }
 
@@ -448,7 +448,7 @@ nav ul li a {
     width: 375px;
     height: 190px;
     border-radius: 10px;
-    background-image: url(/portfolio/pngandpic/todolist.jpg);
+    background-image: url(/pngandpic/todolist.jpg);
     background-size: cover;
 }
 
