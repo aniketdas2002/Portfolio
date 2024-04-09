@@ -316,6 +316,30 @@ nav ul li a {
     background-repeat: no-repeat;
 }
 
+.git{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(/pngandpic/git.png);
+    background-size: cover;
+}
+
+.github{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(/pngandpic/github1.png);
+    background-size: cover;
+}
+
+.vscode{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(/pngandpic/pngwing.com\ \(1\).png);
+    background-size: cover;
+}
+
 @media(max-width:1000px){
     #skills{
         background-image: url(/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg) ;
