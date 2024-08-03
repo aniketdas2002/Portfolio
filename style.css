@@ -1,27 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+Bengali:wght@100..900&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, serif;
+    font-family: "Noto Sans JP", sans-serif;
     box-sizing: border-box;
 }
 
-body {
+.dark-mode {
     background: #050027;
     color: rgb(255, 255, 255);
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
-}
-
-.box {
-    padding: 2% 10%;
-}
-
-#home{
-    background-image: url(/pngandpic/—Pngtree—digital\ information\ technology\ binary\ world_1262482.jpg);
+#home::before {
+    background-image: url(/pngandpic/287580-high-tech-wallpaper-desktop-background.jpg);
     background-size: cover;
+    background-position: center;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
 }
 
 .navbar {
@@ -29,91 +32,118 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    color: #ffffff;
-    background-color: #050027 ;
-    box-shadow: 5px 5px 10px 5px;
+    color: #0001ff;
+    background-color: #050027;
+    box-shadow: 0px 8px 20px 0px #7517ff;
     position: fixed;
-    width: 80vw;
-    height: 10vh;
+    width: 100vw;
+    padding: 20px 10px;
+    /* height: 10vh; */
     z-index: 5;
+
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 0px 15px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: yellow;
 }
-nav ul li a:active{
+
+nav ul li a:active {
     color: red;
 }
 
-
-img {
-    width: 300px;
+.logo {
+    width: 250px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.left {
-    padding-top: 30%;
-    font-size: 1.25rem;
-    align-self: center;
-}
-
-.left h1{
-    line-height: 1.5cm;
+    font-size: 1rem;
 }
 
 .header-text {
+    height: 90vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 50px;
+    padding-top: 100px;
+    margin: 0px 50px;
 }
 
-#mypic{
-    position: relative;
-    top: 120px;
-    width: 30vw;
-    border-radius: 50%;
-    box-shadow: -1px -1px 100px gold;
+.left {
+    padding: 1rem;
+    /* border: 2px solid yellow; */
+    font-size: 1.5rem;
+}
+
+/* .right {
+    border: 2px solid yellow;
+} */
+
+h1 .para {
+    font-size: 2rem;
+}
+
+.left h1 span strong {
+    color: rgb(132, 0, 255);
+}
+
+#git :hover {
+    background-color: red;
+}
+
+#git a {
+    border: none;
+    border-radius: 1rem;
+    padding: 4px 20px;
+    font-size: 1rem;
+    background-color: #0001ff;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+#mypic {
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 1px #7517ff;
     border: none;
 }
 
 .cv {
-    display: inline-block;
     appearance: button;
     text-decoration: none;
-    width: 80%;
+    width: 60%;
     text-align: center;
-    padding: 16px 0px;
+    padding: 12px 0px;
     color: rgb(255, 255, 255);
-    border-radius: 20px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-    position: relative;
-    top: 1cm;
-    background-color: rgb(45, 7, 255);
-    box-shadow: rgb(47, 10, 140) 20px 20px 60px, rgb(31, 38, 52) -20px -20px 60px;
+    margin-top: 2rem;
+    background-color: rgb(17, 0, 255);
+    box-shadow: blue 20px 20px 50px;
     /* transition: all 0s ease-in-out infinite !important;  */
     animation: aniket 1.5s infinite;
 }
 
 @keyframes aniket {
-    from{
-        width: 250px;
+    from {
+        width: 150px;
     }
+
     to {
-        width: 325px;
+        width: 250px;
     }
 }
 
@@ -121,45 +151,185 @@ nav ul li a {
     background-color: red;
 }
 
-/* ------------------about-------------------- */
+nav .hide {
+    display: none;
+}
+
+@media (max-width : 960px) {
+    .header-text {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 70px;
+        height: 100vh;
+    }
+
+    .left {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    h1 .para {
+        font-size: 1.5rem;
+    }
+
+    .cv {
+        margin-top: 0.5rem;
+    }
+
+    .logo {
+        width: 220px;
+    }
+
+    #mypic {
+        width: 350px;
+        height: 425px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .logo{
+        width: 170px;
+    }
+    nav ul li{
+        margin: 0px 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .left {
+        font-size: 0.9rem;
+    }
+
+    #mypic {
+        width: 290px;
+    }
+
+    .cv {
+        padding: 12px 0px;
+        margin-top: 1rem;
+    }
+
+    nav ul {
+        background: rgb(20, 3, 84);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .navbar {
+        height: 8vh;
+    }
+}
+
+@media (max-width:405px) {
+    .header-text {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin: 0px 10px;
+    }
+
+    .left {
+        font-size: 0.7rem;
+    }
+
+    .cv {
+        padding: 10px 0px;
+        position: absolute;
+        left: 60px;
+        animation: none;
+    }
+
+    #mypic {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+.light-mode {
+    background-color: rgb(0, 232, 253);
+    color: black;
+}
+
+/* ////////////////////////////// */
+
+#about {
+    padding: 200px 0px;
+}
 
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 3rem;
 }
 
-.about-column1 {
-    flex-basis: 35%;
-}
+/* .about-column1 {
+    border: 2px solid yellow;
+} */
 
 .about-column2 {
-    margin-top: 15px;
-    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    /* border: 2px solid yellow; */
 }
 
 #pic2 {
-    width: 95%;
+    width: 300px;
     border-radius: 10px;
-    box-shadow: -1px -1px 100px blue;
+    box-shadow: 0px 0px 20px 10px blue;
+    object-fit: cover;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    font-weight: 550;
+}
+
+.subtitle span {
+    color: yellow;
+}
+
+#title {
+    margin: 1%;
+    font-size: 1rem;
 }
 
 .tab-titles {
     display: flex;
-    margin: 20px 0 20px;
-}
-
-.subtitle {
-    font-size: 2rem;
-    font-weight: 550;
-    color: white;
 }
 
 .tab-links {
     margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
     position: relative;
 }
@@ -182,17 +352,16 @@ nav ul li a {
 .tab-contains ul li {
     list-style: none;
     margin: 10px 0;
-    font-size: 0.90rem;
+    font-size: 0.8rem;
 }
 
-#title{
-    margin: 1.5%;
-    font-size: 0.90rem;
+ul li i {
+    font-weight: 800;
 }
 
 .tab-contains ul li span {
-    color: rgb(66, 98, 241);
-    font-size: 0.90rem;
+    color: yellow;
+    font-size: 0.8rem;
 }
 
 .tab-contains {
@@ -203,201 +372,305 @@ nav ul li a {
     display: block;
 }
 
+@media (max-width : 1205px) {
+    #pic2 {
+        width: 250px;
+        height: 400px;
+        box-shadow: 0px 0px 20px 3px blue;
+    }
 
-/* -----------------skills------------- */
-#skills{
+    .about-container {
+        gap: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    #title {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width : 900px) {
+    #pic2 {
+        width: 450px;
+        height: 200px;
+    }
+
+    #about {
+        padding: 90px 10px;
+    }
+
+    .about-column2 {
+        width: 90vw;
+        justify-content: flex-start;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    #title {
+        font-size: 0.8rem;
+    }
+
+    .tab-links {
+        font-size: 0.9rem;
+    }
+
+    .tab-contains ul li {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width : 700px) {
+    #pic2 {
+        width: 300px;
+    }
+}
+
+@media (max-width : 600px) {
+    #pic2 {
+        width: 300px;
+    }
+}
+
+@media (max-width : 450px) {
+    #title {
+        font-size: 0.6rem;
+    }
+}
+
+/* ////////////////////////////////// */
+
+#skills {
     background-image: url(/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg);
     background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.boder{
-    margin-top: 150px;
+.boder {
+    margin: 0vh 20vh;
     border: 0.5px solid white;
     border-radius: 10px;
-    box-shadow:-1px -1px 100px blue ;
+    box-shadow: 0px 0px 20px 10px blue;
 }
 
-#skills h1{
+#skills h1 {
     font-size: 2rem;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 1.5rem;
 }
 
-.skills-container{
+#skills span {
+    color: yellow;
+}
+
+.skills-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 1% 6%;
 }
 
-.skills-box p{
+.skills-box p {
     font-weight: 600;
     color: white;
 }
 
-.skills-box{
-    width: 12vw;
-    height: 12vh;
+.skills-box {
+    height: 110px;
+    width: 160px;
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    box-shadow:-1px -1px 100px blue ;
-    margin: 20px 2% ;
+    box-shadow: 0px 0px 100px rgb(255, 0, 0);
+    margin: 20px;
 }
 
-.cpluse{
+.cpluse {
     background-image: url(/pngandpic/icons8-c++-480.png);
     background-size: cover;
     width: 50px;
     height: 50px;
-    border-radius: 10px;
 }
 
-.c{
+.c {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
     background-image: url(/pngandpic/icons8-c-programming-480.png);
     background-size: cover;
-
 }
 
-.java{
+.java {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
     background-image: url(/pngandpic/icons8-java-480.png);
     background-size: cover;
 }
 
-.sql{
+.sql {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
     background-image: url(/pngandpic/pngwing.com.png);
     background-size: cover;
 }
 
-.html{
+.html {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
     background-image: url(/pngandpic/icons8-html-480.png);
     background-size: cover;
 }
 
-.css{
+.css {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
     background-image: url(/pngandpic/icons8-css-480.png);
     background-size: cover;
 }
 
-.js{
+.js {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
     background-image: url(/pngandpic/icons8-js-480.png);
     background-size: cover;
 }
 
-.oops{
+.oops {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
     background-image: url(/pngandpic/download.png);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.git{
+.git {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
     background-image: url(/pngandpic/git.png);
     background-size: cover;
 }
 
-.github{
+.github {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
     background-image: url(/pngandpic/github1.png);
     background-size: cover;
 }
 
-.vscode{
+.vscode {
     width: 50px;
     height: 50px;
-    border-radius: 10px;
     background-image: url(/pngandpic/pngwing.com\ \(1\).png);
     background-size: cover;
 }
 
-@media(max-width:1000px){
-    #skills{
-        background-image: url(/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg) ;
-        background-size: cover ;
-        background-position: center;
+@media (max-width: 1220px) {
+    .skills-box {
+        height: 90px;
+        width: 120px;
     }
-    
-}
-@media (min-width:1001px) and (max-width:1500px){
-    #skills{
-        background-image: url(/pngandpic/tianyi-ma-WiONHd_zYI4-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-    
 }
 
-/* -----------------Projects ------------- */
+@media (max-width: 1040px) {
+    .boder {
+        margin: 0vh 5vh;
+    }
 
-#project{
-    background-image: url(/pngandpic/jj-ying-7JX0-bfiuxQ-unsplash.jpg);
+    .skills-container {
+        padding: 0;
+    }
+
+    .boder {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .skills-box {
+        height: 70px;
+        width: 80px;
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width: 395px) {
+    #skills h1 {
+        font-size: 0.9rem;
+    }
+
+    .boder {
+        margin: 0vh 2vh;
+        margin-top: 5vh;
+    }
+
+    .skills-box {
+        margin: 10px 10px;
+    }
+}
+
+/* /////////////////////////// */
+
+#project {
+    background-image: url(/pngandpic/161594-wallpaper-blue-black-abstract-white-circles-numbers.jpg);
     background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
 }
 
-#project h1{
-    color: black;
+#project h1 {
     font-size: 2rem;
     text-align: center;
-    margin-top: 100px;
+    padding-top: 90px;
 }
 
-.project-container{
+#project span {
+    color: yellow;
+}
+
+#project p {
+    text-align: center;
+}
+
+.project-container {
+    /* border: 2px solid black; */
     display: flex;
     align-items: center;
-    justify-content: space-around ;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1%;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.project-box{
-    width: 390px;
+.project-box {
+    width: 420px;
     height: 230px;
     border-radius: 10px;
-    background-color: black;
+    background-color: rgb(99, 18, 18);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     box-shadow: -1px -1px 50px blue;
-    margin: 10px 5px;
     position: relative;
     overflow: hidden;
 }
 
-.layer{
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(46, 0, 172, 0.834), red);
+    background: linear-gradient(black, red);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -413,12 +686,12 @@ nav ul li a {
     transition: height 0.5s;
 }
 
-.layer h3{
+.layer h3 {
     font-weight: 1900;
     margin-bottom: 10px;
 }
 
-.layer a{
+.layer a {
     margin-top: 15px;
     color: red;
     text-decoration: none;
@@ -432,117 +705,154 @@ nav ul li a {
     justify-content: center;
 }
 
-.project-box:hover .layer{
+.project-box:hover .layer {
     height: 100%;
 }
 
-.portfolio{
-    width: 375px;
-    height: 190px;
+.project-img {
+    width: 405px;
+    height: 205px;
     border-radius: 10px;
-    background-image: url(/pngandpic/Portfolio.jpg);
+}
+
+.portfolio {
+    background-image: url(/pngandpic/portfolio.png);
     background-size: cover;
 }
 
-.calculator{
-    width: 375px;
-    height: 190px;
-    border-radius: 10px;
-    background-image: url(/pngandpic/calculator.jpg);
+.calculator {
+    background-image: url(/zhello/pngandpic/calculator.jpg);
     background-size: cover;
 }
 
-.gussthenumber{
-    width: 375px;
-    height: 190px;
-    border-radius: 10px;
-    background-image: url(/pngandpic/Gussthenumber.jpg);
+.gussthenumber {
+    background-image: url(/pngandpic/gusstheno.png);
     background-size: cover;
 }
 
-.paymentform{
-    width: 375px;
-    height: 190px;
-    border-radius: 10px;
-    background-image: url(/pngandpic/paymentform.jpg);
+.paymentform {
+    background-image: url(/pngandpic/tictaktoe.png);
     background-size: cover;
 }
 
-.todolist{
-    width: 375px;
-    height: 190px;
-    border-radius: 10px;
+.rockpaperscissors {
+    background-image: url(/pngandpic/rockpaperscissor.png);
+    background-size: cover;
+}
+
+.todolist {
     background-image: url(/pngandpic/todolist.jpg);
     background-size: cover;
 }
 
-@media(max-width:1000px){
-    #project{
-        height: 200vh;
+@media(max-width:900px) {
+    .project-box {
+        width: 320px;
+        height: 200px;
+        box-shadow: -1px -1px 50px blue;
     }
-    
-}
-@media (min-width:1001px) and (max-width:1500px){
-    #project{
-        height: 140vh;
+
+    .project-img {
+        width: 310px;
+        height: 157px;
+        border-radius: 10px;
     }
-    
+
+    .project-container {
+        gap: 10px;
+    }
+
+    .layer {
+        padding: 0 10px;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .layer h3 {
+        font-weight: 1900;
+        margin-bottom: 8px;
+    }
 }
 
-/* -----------------contact ------------- */
+/* /////////////////////////// */
 
-.contact-container{
+#contact {
+    background-color: blueviolet;
+    padding: 100px 50px;
+}
+
+.contact-subtitle {
+    color: black;
+}
+
+.contact-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    padding: 20px;
+    background-color: chocolate;
+    border-radius: 50px;
 }
 
-.contact-left{
-    flex-basis: 35%;
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.contact-right{
-    flex-basis: 60%;
+.contact-right {
+    margin: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid yellow; */
 }
 
-.contact-left p{
+.contact-left p {
     margin-top: 30px;
 }
 
-.contact-left p a{
+.contact-left p a {
     color: white;
 }
 
-.contact-left p i{
-    color: blue;
-    margin-right: 15px;
-    font-size: 25px;
+.contact-left span {
+    color: yellow;
 }
 
-.social-icon{
+.contact-left p i {
+    color: black;
+    margin-right: 15px;
+    font-size: 2rem;
+}
+
+.social-icon {
     margin-top: 40px;
 }
 
-.social-icon a{
+.social-icon a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: blue;
+    color: rgb(0, 0, 0);
+    color: rgb(0, 21, 128);
     display: inline-block;
     transition: transform 0.5s;
-    box-shadow: rgb(47, 10, 140) 20px 20px 60px, rgb(31, 38, 52) -20px -20px 60px;
 }
 
-.social-icon a:hover{
+.social-icon a:hover {
     color: yellow;
     transform: translateY(-5px);
 }
-.social-icon a:active{
+
+.social-icon a:active {
     color: red;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding-left: 55px;
     margin-left: 11px;
@@ -553,21 +863,25 @@ nav ul li a {
     border: none;
     border-radius: 10px;
     background-color: rgb(45, 7, 255);
-    box-shadow: rgb(47, 10, 140) 20px 20px 60px, rgb(31, 38, 52) -20px -20px 60px;
     color: white;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: red;
 }
 
-.contact-right form{
-    width: 100%;
+.contact-right form {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
-    border: 2px solid red;
+    border: 2px solid black;
     outline: none;
     background: transparent;
     padding: 15px;
@@ -577,115 +891,62 @@ form input, form textarea{
     border-radius: 6px;
 }
 
-.red{
-    color: blue;
+form textarea::placeholder,
+form input[type="text"]::placeholder,
+form input[type="email"]::placeholder {
+    color: black;
 }
 
-.copyright p{
+@media(max-width: 1000px) {
+    .contact-right {
+        margin: 5px;
+        width: 300px;
+    }
+
+    .contact-left {
+        margin: 5px;
+    }
+
+    .contact-container {
+        padding: 0px;
+    }
+}
+
+@media(max-width: 735px) {
+    .social-icon {
+        margin-top: 10px;
+    }
+
+    .contact-left p {
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 425px) {
+    .contact-subtitle {
+        font-size: 1.2rem;
+    }
+}
+
+/* /////////////////////////////// */
+
+.copyright {
     width: 100%;
     text-align: center;
-    padding: 25px 0;
-    font-weight: 300;
-    margin: 0px;
-}
-
-.copyright hr{
-    color: red;
+    padding: 20px;
+    font-weight: bolder;
+    color: cyan;
     background-color: red;
 }
 
-
-nav .fa-solid{
-    display: none;
+.copyright span {
+    color: yellowgreen;
 }
 
-@media only screen and (max-width: 600px){
-    .headertext{
-        margin-top: 100%;
-        font-size: 16px;
-    }
-    #mypic{
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        left: 125px;
-        top: 425px;
-        width: 275px;
-    }
-    .headertext h1{
-        font-size: 30px;
-    }
-    nav .fa-solid{
-        display: block;
-        font-size: 25px;
-    }
-    nav ul{
-        background: rgb(122, 88, 246);
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 25px;
+.copyright .social-icon {
+    margin-top: 0px;
+}
 
-    }
-    nav ul .fa-solid{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-    .navbar{
-        height: 7%;
-    }
-    .subtitle{
-        font-size: 1.5rem;
-    }
-    #pic2{
-        position: relative;
-        left: 25%;
-        top: 50px;
-        width: 200px;
-        height: 260px;
-    }
-    .about-column1, .about-column2{
-        flex-basis: 100%;
-    }
-    .about-column1{
-        margin-bottom: 30px;
-    }
-    .about-column2{
-        font-size: 2px;
-    }
-    .tab-contains ul li {
-        font-size: 0.75rem;
-    }
-    #title{
-        font-size: 0.75rem;
-    }
-    .tab-contains ul li span {
-        font-size: 0.90rem;
-    }
-    .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
-    }
-    .services-list div h2{
-        font-size: 30px;
-    }
-    .services-list div p{
-        font-size: 14px;
-    }
-    .contact-left, .contact-right{
-        flex-basis:50%;
-    }
-    .copyright{
-        font-size: 14px;
-    }
+.copyright a {
+    color: black;
 }
