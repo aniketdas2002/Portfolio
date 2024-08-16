@@ -264,7 +264,10 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form name="submit-to-google-sheet"  action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="dcf250d6-6f31-4abb-97ab-08a40e4a6bb7">
+
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="4" placeholder="Leave a message here..."></textarea>
